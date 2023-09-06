@@ -389,12 +389,15 @@ a {
     gap: 7px;
   }
   .tpop {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     font-size: 25px;
   }
   .timer p {
     font-size: 18px;
     margin-top: 10px;
+  }
+  .timer > span {
+    font-size: 32px;
   }
 }
