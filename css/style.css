@@ -149,14 +149,6 @@ a {
   max-width: 500px;
 }
 
-.imgSO {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 90%;
-  max-width: 600px;
-}
-
 .logoWP {
   width: 220px;
   object-fit: contain;
