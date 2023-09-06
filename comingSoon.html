@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body class="bodyLogin">
+    <img class="imgSO" src="images/imgSO.png" alt="" />
+    <div class="loginPage">
+      <div class="lineLogin"></div>
+      <div class="allLoginPage allErrorPage container">
+        <div class="bodySoon">
+          <img class="logoWP" src="images/logoW.png" alt="" />
+          <h1>ترقبوا انطلاق الموقع</h1>
+
+          <div class="timer" id="timer">
+            <div>
+              <div class="tpop">
+                <span id="seconds"></span>
+              </div>
+              <p>ثانية</p>
+            </div>
+            <span>:</span>
+            <div>
+              <div class="tpop">
+                <span id="minutes"></span>
+              </div>
+              <p>دقيقة</p>
+            </div>
+            <span>:</span>
+            <div>
+              <div class="tpop">
+                <span id="hours"></span>
+              </div>
+              <p>ساعة</p>
+            </div>
+            <span>:</span>
+            <div>
+              <div class="tpop">
+                <span id="days"></span>
+              </div>
+              <p>يوم</p>
+            </div>
+          </div>
+        </div>
+        <div class="sotialF">
+          <div class="sotialFR">
+            <div class="rowSotial">
+              <img src="images/Vector.svg" alt="" />
+              <span
+                >غزة - شارع الوحدة - عمارة غازي الشوا - مقابل عيادة الرمال</span
+              >
+            </div>
+            <div class="rowSotial">
+              <img src="images/phonIcon.svg" alt="" />
+              <span>0592072429</span>
+            </div>
+            <div class="rowSotial">
+              <img src="images/VectorE.svg" alt="" />
+              <span>husseinsawalh@gmail.com</span>
+            </div>
+          </div>
+          <div class="sotialFL">
+            <a href="">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jqueryLibrary.js"></script>
+
+    <script>
+      const targetDateTime = new Date("September 20, 2023 13:38:50");
+      const daysEl = document.getElementById("days");
+      const hoursEl = document.getElementById("hours");
+      const minsEl = document.getElementById("minutes");
+      const secondsEl = document.getElementById("seconds");
+      const rocketimg = document.getElementById("rocketimg");
+      const body = document.getElementById("body");
+
+      let countdownInterval;
+
+      function updateCountdown() {
+        const currentDate = new Date();
+
+        const totalSeconds = Math.max(0, (targetDateTime - currentDate) / 1000);
+        const days = Math.floor(totalSeconds / 3600 / 24);
+        const hours = Math.floor(totalSeconds / 3600) % 24;
+        const minutes = Math.floor(totalSeconds / 60) % 60;
+        const seconds = Math.floor(totalSeconds) % 60;
+
+        daysEl.innerText = days;
+        hoursEl.innerText = hours;
+        minsEl.innerText = minutes;
+        secondsEl.innerText = seconds;
+
+        if (totalSeconds == 0) {
+          rocketimg.style.top = "-100%";
+          setTimeout(() => {
+            window.location.reload();
+          }, 3000);
+        }
+      }
+
+      updateCountdown();
+      countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "El Messiri", sans-serif;
+}
+
+body {
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1550px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px;
+  }
+}
+
+.bodyLogin {
+  background-image: url(../images/bgImg.png);
+  background-color: #501d68;
+  background-size: cover;
+}
+
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.allLoginPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.logoWL {
+  width: 230px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+}
+.rightLoginPage {
+  color: #fff;
+  position: relative;
+  width: 50%;
+}
+
+.leftLoginPage {
+  width: 100%;
+  max-width: 450px;
+}
+.rightLoginPage h1 {
+  position: relative;
+  font-size: 65px;
+}
+.allErrorPage .rightLoginPage h1 {
+  font-size: 55px;
+}
+.rightLoginPage h4 {
+  font-size: 28px;
+  position: relative;
+}
+.formLogin {
+  background-color: #fff;
+  padding: 30px 45px;
+  width: 100%;
+}
+
+.inputFLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.inputFLogin input {
+  padding: 7px 10px;
+  border: 1px solid #db1477;
+  border-radius: 30px;
+  outline: none;
+}
+
+.checkFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkFlex a {
+  text-decoration: none;
+  color: #333333 !important;
+}
+
+.btnLogin {
+  background-color: #db1477;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+}
+
+.loginChange {
+  text-align: center;
+  display: block;
+}
+
+.loginChange a {
+  color: #db1477 !important;
+  text-decoration: none;
+}
+
+.oneShadowL {
+  position: absolute;
+  top: -80px;
+  right: 20px;
+  opacity: 0.3;
+  width: 100%;
+  max-width: 500px;
+}
+
+.imgSO {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.logoWP {
+  width: 220px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgbgS {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.bodySoon {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff2c;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 20px;
+  margin: auto;
+  width: 95%;
+  max-width: 1000px;
+  padding: 40px 30px;
+  margin-bottom: 0;
+}
+
+.timer {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin-top: 35px;
+  text-align: center;
+}
+.timer > span {
+  font-size: 40px;
+}
+.tpop {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff3a;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.timer span {
+  margin-bottom: -7px;
+}
+.timer p {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.sotialF {
+  margin-top: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sotialFR {
+  margin-top: auto;
+  display: flex;
+
+  gap: 30px;
+}
+
+.rowSotial {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.rowSotial img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+.sotialFL {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sotialFL a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #feb800;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.sotialFL a:hover {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #feb800;
+  background-color: #feb800;
+  color: #fff;
+}
+
+@media (max-width: 1800px) {
+  .tpop {
+    width: 110px;
+    height: 110px;
+    font-size: 45px;
+  }
+  .imgSO {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .textcardG h1 {
+    font-size: 35px;
+  }
+  .logoI {
+    max-width: 400px;
+  }
+  .tpop {
+    width: 100px;
+    height: 100px;
+    font-size: 39px;
+  }
+  .timer p {
+    font-size: 25px;
+  }
+  .imgSO {
+    max-width: 350px;
+  }
+}
+@media (max-width: 1250px) {
+  .textcardG h1 {
+    font-size: 35px;
+  }
+  .logoI {
+    max-width: 400px;
+  }
+  .tpop {
+    width: 80px;
+    height: 80px;
+    font-size: 33px;
+  }
+  .timer p {
+    font-size: 22px;
+  }
+  .timer {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .timer {
+    justify-content: center;
+  }
+  .textcardG {
+    width: 100%;
+  }
+  .imgcardG {
+    width: 100%;
+    height: 450px;
+  }
+
+  .textcardG h1 {
+    font-size: 26px;
+  }
+  .logoWP {
+    width: 180px;
+  }
+  .bodySoon {
+    padding-bottom: 25px;
+  }
+  .sotialF {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .sotialFR {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .timer {
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .tpop {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+  .imgSO {
+    max-width: 250px;
+  }
+}
+@media (max-width: 420px) {
+  .timer {
+    gap: 7px;
+  }
+  .tpop {
+    width: 63px;
+    height: 63px;
+    font-size: 28px;
+  }
+  .timer p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .timer {
+    gap: 7px;
+  }
+  .tpop {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .timer p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
